@@ -23,7 +23,7 @@ SRCS = 			$(foreach FILE, $(FILES), $(shell find $(SRCDIR) -name $(FILE)))
 #Objs
 OBJS = 			$(patsubst $(SRCDIR)/%, $(OBJDIR)/%, $(SRCS:.cpp=.o))
 
-$(OBJDIR)/%.o: $(SRCDIR)/%.cp
+$(OBJDIR)/%.o: $(SRCDIR)/%.cpp
 	@$(MKDIR) $(@D)
 	@$(CC) $(CFLAGS) -I $(INCDIR) -c -o $@ $<
 
