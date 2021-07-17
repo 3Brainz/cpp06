@@ -3,7 +3,7 @@ NAME = casta
 
 #Compiler
 CC = 			clang++
-CFLAGS = 		-Wall -Wextra -Werror
+CFLAGS = 		-Wall -Wextra -std=c++98 -Werror
 
 #Shell
 MKDIR =			mkdir -p
